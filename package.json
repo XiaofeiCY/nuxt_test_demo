@@ -17,10 +17,13 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.4",
+    "@tresjs/cientos": "^4.0.2",
+    "@tresjs/nuxt": "^3.0.7",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",
+    "three": "^0.169.0",
     "vue": "latest",
     "vue-router": "latest"
   },
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@types/three": "^0.169.0",
     "@typescript-eslint/parser": "^8.7.0",
     "commitizen": "^4.3.0",
     "commitlint-config-cz": "^0.13.3",
