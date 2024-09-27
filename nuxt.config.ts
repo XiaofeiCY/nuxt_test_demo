@@ -6,4 +6,13 @@ export default defineNuxtConfig({
   // devtools: { enabled: true },
   srcDir: 'src/',
   modules: ['@pinia/nuxt', '@vueuse/nuxt'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/styles/default.scss";',
+        },
+      },
+    },
+  },
 });

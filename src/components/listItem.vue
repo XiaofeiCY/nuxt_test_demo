@@ -13,14 +13,14 @@ const launchTo = () => {
   </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .section {
   margin-bottom: 16px;
 }
 .main {
   cursor: pointer;
-}
-.main:hover {
-  background-color: #f0f2f5;
+  &:hover {
+    background-color: $bgColor;
+  }
 }
 </style>
