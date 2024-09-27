@@ -1,4 +1,5 @@
 <script setup lang="ts">
+useHead({ title: 'about' });
 const { x, y } = useMouse();
 </script>
 
