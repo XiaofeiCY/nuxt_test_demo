@@ -1,9 +1,13 @@
 <script setup lang="ts">
-useHead({ title: 'about' });
 const { x, y } = useMouse();
+const title = ref('about');
+const changeTitle = () => {
+  title.value = 'about2';
+};
+useHead({ title });
 </script>
 
 <template>
   <NuxtLayout name="header"></NuxtLayout>
-  <div> 这是一个about页面{{ x }}，{{ y }} </div>
+  <div @click="changeTitle"> 这是一个about页面{{ x }}，{{ y }} </div>
 </template>
