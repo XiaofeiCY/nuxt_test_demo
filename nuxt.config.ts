@@ -9,7 +9,14 @@ export default defineNuxtConfig({
     dir: 'assets/images',
     // formats: ['webp', 'avif'],
   },
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@tresjs/nuxt', '@nuxtjs/i18n', '@nuxt/image'],
+  modules: [
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    '@tresjs/nuxt',
+    '@nuxtjs/i18n',
+    '@nuxt/image',
+    '@nuxtjs/tailwindcss',
+  ],
   i18n: {
     vueI18n: './i18n.config.ts',
   },
