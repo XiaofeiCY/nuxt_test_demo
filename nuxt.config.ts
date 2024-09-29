@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler', // or 'modern'
           additionalData: '@import "@/assets/styles/default.scss";',
         },
       },
