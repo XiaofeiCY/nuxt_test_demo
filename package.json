@@ -16,6 +16,7 @@
     "commit": "git-cz"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^8.5.5",
     "@pinia/nuxt": "^0.5.4",
     "@tresjs/cientos": "^4.0.2",
     "@tresjs/nuxt": "^3.0.7",
