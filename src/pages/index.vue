@@ -36,6 +36,9 @@ const { userInfo } = storeToRefs(zz);
   <div class="section">
     <NuxtLink to="/three">去three页面</NuxtLink>
   </div>
+  <div class="section">
+    <NuxtLink to="/picDemo">去pic页面</NuxtLink>
+  </div>
   <div v-for="item in yy" :key="item.id">
     <ListItem :title="item.name" :id="item.id" />
   </div>
