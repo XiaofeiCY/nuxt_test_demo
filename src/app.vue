@@ -11,7 +11,7 @@ const title = ref('我的神奇网站');
 useSeoMeta({
   title,
   ogTitle: '我的神奇网站',
-  description: ['这是我的神奇网站，让我来告诉你关于它的一切。', '服务端渲染，useHead的使用，Nuxt3,Nuxt3服务端渲染'],
+  description: '这是我的神奇网站，让我来告诉你关于它的一切。',
   ogDescription: '这是我的神奇网站，让我来告诉你关于它的一切。',
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image',
