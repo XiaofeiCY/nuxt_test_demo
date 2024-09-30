@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Dinosaure from './components/Dinosaure.vue';
-import { TresCanvas } from '@tresjs/core';
-import { OrbitControls } from '@tresjs/cientos';
+// import { TresCanvas } from '@tresjs/core';
+// import { OrbitControls } from '@tresjs/cientos';
 import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from 'three';
 
 const gl = {
