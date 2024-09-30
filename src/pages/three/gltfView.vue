@@ -5,7 +5,7 @@ import Dinosaure from './components/Dinosaure.vue';
 import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from 'three';
 import * as TWEEN from '@tweenjs/tween.js';
 
-// const position = ref<[number, number, number]>([2, 2, 3]);
+const position = ref<[number, number, number]>([2, 2, 3]);
 const positionX = ref(2);
 const aaa = ref();
 let zzz = new TWEEN.Tween(positionX.value as any);
@@ -52,7 +52,7 @@ const animate = () => {
     </div>
     <div class="canvas-model">
       <TresCanvas v-bind="gl">
-        <TresPerspectiveCamera ref="aaa" :position="[positionX, 2, 3]" :look-at="[0, 0.5, 0]" />
+        <TresPerspectiveCamera ref="aaa" :position="position" :look-at="[0, 0.5, 0]" />
         <!-- 鼠标控制模型移动 -->
         <!-- <OrbitControls /> -->
         <Suspense>

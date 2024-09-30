@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   // alias: {
   //   images: fileURLToPath(new URL('src/assets/images', import.meta.url)),
   // },
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@tresjs/nuxt', '@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/tailwindcss'],
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@tresjs/nuxt', '@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/tailwindcss', '@formkit/auto-animate/nuxt'],
   i18n: {
     vueI18n: './i18n.config.ts',
   },
