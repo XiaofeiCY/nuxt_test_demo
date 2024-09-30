@@ -3,7 +3,12 @@ import Dinosaure from './components/Dinosaure.vue';
 // import { TresCanvas } from '@tresjs/core';
 // import { OrbitControls } from '@tresjs/cientos';
 import { BasicShadowMap, SRGBColorSpace, NoToneMapping } from 'three';
+import * as TWEEN from '@tweenjs/tween.js';
 
+// const position = ref<[number, number, number]>([2, 2, 3]);
+const positionX = ref(2);
+const aaa = ref();
+let zzz = new TWEEN.Tween(positionX.value as any);
 const gl = {
   // clearColor: '#F78B3D',
   shadows: true,
@@ -13,12 +18,41 @@ const gl = {
   toneMapping: NoToneMapping,
   // windowSize: true,
 };
+onMounted(() => {
+  animate();
+});
+
+const xxx = () => {
+  console.log('++++++++++++++');
+  // position.value = [2, 3.5, 4];
+  // const qq = {
+  //   x: position.value[0],
+  //   y: position.value[1],
+  //   z: position.value[2],
+  // };
+
+  zzz = new TWEEN.Tween(positionX.value as any)
+    .to(0)
+    .easing(TWEEN.Easing.Quadratic.Out)
+    .onUpdate(() => {
+      // positionX.value = 0;
+      aaa.value.position.set(0, 2, 3);
+    })
+    .start();
+};
+const animate = () => {
+  requestAnimationFrame(animate);
+  zzz.update();
+};
 </script>
 <template>
   <div class="canvas-page">
+    <div class="div">
+      <button @click="xxx">点击事件</button>
+    </div>
     <div class="canvas-model">
       <TresCanvas v-bind="gl">
-        <TresPerspectiveCamera :position="[2, 2, 3]" :look-at="[0, 0.5, 0]" />
+        <TresPerspectiveCamera ref="aaa" :position="[positionX, 2, 3]" :look-at="[0, 0.5, 0]" />
         <!-- 鼠标控制模型移动 -->
         <!-- <OrbitControls /> -->
         <Suspense>
@@ -39,7 +73,7 @@ const gl = {
     width: 100%;
     height: 800px;
     position: fixed;
-    top: 0;
+    top: 50px;
   }
   .canvas-article {
     width: 100%;

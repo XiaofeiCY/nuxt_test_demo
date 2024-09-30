@@ -22,6 +22,7 @@
     "@pinia/nuxt": "^0.5.4",
     "@tresjs/cientos": "^4.0.2",
     "@tresjs/nuxt": "^3.0.7",
+    "@tweenjs/tween.js": "^25.0.0",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
     "nuxt": "^3.13.0",
