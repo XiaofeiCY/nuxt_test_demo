@@ -54,6 +54,9 @@ const toggleDark = useToggle(isDark);
 
 <style lang="scss" scoped>
 .section {
+  width: 300px;
+  padding: 16px;
+  borader-radius: 4px;
   margin-bottom: 8px;
 }
 .click_div {
