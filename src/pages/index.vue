@@ -42,7 +42,10 @@ const toggleDark = useToggle(isDark);
   <div class="section shadow-sm bg-gray-300">
     <NuxtLink to="/picDemo">去pic页面</NuxtLink>
   </div>
-  <div class="section click_div shadow-sm" @click="toggleDark()"> 当前模式：{{ isDark ? 'dark' : 'light' }} </div>
+
+  <ClientOnly>
+    <div class="section click_div shadow-sm" @click="toggleDark()"> 当前模式：{{ isDark ? 'dark' : 'light' }} </div>
+  </ClientOnly>
 
   <div v-for="item in yy" :key="item.id">
     <ListItem :title="item.name" :id="item.id" />
