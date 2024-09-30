@@ -37,7 +37,10 @@ const toggleDark = useToggle(isDark);
     </div>
   </div>
   <div class="section shadow-xl bg-zinc-300">
-    <NuxtLink to="/three">去three页面</NuxtLink>
+    <NuxtLink to="/three">去three基础页面</NuxtLink>
+  </div>
+  <div class="section shadow-xl bg-zinc-300">
+    <NuxtLink to="/three/gltfView">去three进阶页面</NuxtLink>
   </div>
   <div class="section shadow-xl bg-zinc-300">
     <NuxtLink to="/picDemo">去pic页面</NuxtLink>
